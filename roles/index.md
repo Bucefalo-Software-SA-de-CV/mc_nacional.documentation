@@ -1,4 +1,7 @@
 # Roles y Permisos
+## Coordinador Nacional (00)
+
+Coordinador nacional (falta descripcion)
 
 ## Coordinador Estatal (01)
 
