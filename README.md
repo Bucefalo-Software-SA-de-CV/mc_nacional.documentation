@@ -10,7 +10,7 @@ El presente documento contiene la descripción técnica de la implementación pa
 
 - [Roles y permisos](roles/)
 - [Filtros](filters/)
-- Catálogos
+- [Catálogos](catalogs/)
 - Procesos
 - Reportes
 - Dashboards
