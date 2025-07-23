@@ -11,8 +11,8 @@ El presente documento contiene la descripción técnica de la implementación pa
 - [Roles y permisos](roles/)
 - [Filtros](filters/)
 - [Catálogos](catalogs/)
-  - [Ciudadanos](catalogs/citizen.md)
 - Procesos
+  - [Ciudadanos](catalogs/citizen.md)
 - Reportes
 - Dashboards
 - Utilerías
