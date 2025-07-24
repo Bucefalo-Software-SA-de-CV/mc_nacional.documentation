@@ -12,7 +12,7 @@ El presente documento contiene la descripción técnica de la implementación pa
 - [Filtros](filters/)
 - [Catálogos](catalogs/)
 - Procesos
-  - [Ciudadanos](catalogs/citizen.md)
+  - [Captación de Ciudadanos](proccess/catchment/citizen.md)
 - Reportes
 - Dashboards
 - Utilerías
