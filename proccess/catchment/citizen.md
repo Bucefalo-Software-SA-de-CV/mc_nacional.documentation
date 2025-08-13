@@ -26,87 +26,88 @@ De la lista previa, cinco datos en negrita permiten formar una clave única e in
 
 ```
 {
-  id: "string"
-  createdOn: "date",
-  updatedOn: "date",
-  name: "string",
-  firstSurname: "string",
-  secondSurname: "string",
-  genre: MASCULINO,
-  birthday: "string",
-  birthKey: "string",
-  birthPlace: "string",
-  whatsapp: "string",
-  whatsappStatus": "number",
-  phone: "number",
-  address: {
-    area: "string"
-    districtFederal: "number",
-    districtLocal: "number",
-    municipality: "string",
-    section: "number",
-    block: "string",
-    street: "string",
-    extNumber: "string",
-    intNumber: "string",
-    locality: "string",
-    suburb: "string",
-    zipCode: "string",
-    sector: "string"
+  "id": "",
+  "address": {
+    "street": "C 105",
+    "extNumber": "NUM 7",
+    "intNumber": "",
+    "suburb": "SANTA LUCIA",
+    "municipality": "CAMPECHE",
+    "locality": "SAN FRANCISCO DE CAMPECHE",
+    "zipCode": "24020",
+    "federalDistrict": 1,
+    "localDistrict": 3,
+    "section": 54,
+    "block": 27,
+    "promotionBlock": 0
   },
-  nickname: "string",
-  platform: "string",
-  hasIncompleteData: "number",
-  ocupation: "string",
-  classification: "string",
-  tshirtSize: "string",
-  studyLevel: "string",
-  studyLevelCareer: "string",
-  sector: "string",
-  childrenNumber: "number",
-  photos: {
-    address": "string",
-    profile": "string",
-    card: "string"
+  "voteAddress": {
+    "street": "CARRETERA FEDERAL IXTLAHUALA",
+    "extNumber": "S/N",
+    "intNumber": "",
+    "suburb": "XBACAB",
+    "municipality": "CHAMPOTON",
+    "locality": "CHAMPOTON",
+    "zipCode": "24400",
+    "localDistrict": 15,
+    "federalDistrict": 2,
+    "section": 347,
+    "block": 0,
+    "promotionBlock": 0
+  },
+  "resideInAddress": 0,
+  "catchment": {
+    "appName": "app-avanza",
+    "platform": "android",
+    "idPopulation": 55768,
+    "origin": "MOVIMIENTO CIUDADANO",
+    "program": "AFILIACIONES 2025",
+    "activity": "AFILIACION",
+    "username": "victoralpuche",
+    "catchedAt": "2025-08-08T15:14:17.652+00:00",
+    "latitude": 18.6517127,
+    "longitude": -91.7729817,
+    "catchmentSessionId": "JMcnsmnqlDxt8iBj9co0",
+    "promotionSessionId": ""
+  },
+  "birthPlace": "",
+  "birthKey": "",
+  "whatsapp": "5625006097",
+  "whatsappStatus": 1,
+  "phone": "",
+  "email": "example@mail.com",
+  "voteKey": "BRRNMR00020204M100",
+  "hasVoteExperience": 0,
+  "regexCode": "",
+  "status": "catched",
+  "idStatus": 1,
+  "hasIncompleteData": 0,
+  "apiVersion": 1,
+  "classification": "",
+  "nickname": "",
+  "occupation": "",
+  "tshirtSize": "",
+  "studyLevel": "LICENCIATURA",
+  "studyLevelCareer": "DERECHO",
+  "sector": "",
+  "childrenNumber": 0,
+  "name": "MARISA ROSBEL",
+  "firstSurname": "BARRERA",
+  "secondSurname": "RINCON",
+  "birthday": "02/02/2000",
+  "genre": "FEMENINO",
+  "childsNumber": 0,
+  "photo": {
+    "address": "",
+    "profile": "",
+    "card": ""
   }
-  idCatchmentSession: "string",
-  idPopulation: "number",
-  idPromotionSession: "string",
-  idStatus: "number",
-  hasVoteExperience: "number",
-  voteKey: "string",
-  voteAddress: {
-    area: "string"
-    districtFederal: "number",
-    districtLocal: "number",
-    municipality: "string",
-    section: "number",
-    block: "string",
-    street: "string",
-    extNumber: "string",
-    intNumber: "string",
-    locality: "string",
-    suburb: "string",
-    zipCode: "string",
-    sector: "string"
-  },
-  resideInAddress: "number",
-  catchment: {
-    catchedAt: "date",
-    origin: "string",
-    program: "string",
-    activity: "string",
-    user: "string",
-    latitude: "number",
-    longitude: "number",
-  },
-  regexCode: "string"  
 }
 ```
 
 ## Modelo
 
-![Modelado](citizen.jpg "UML Diagram")
+![Modelado](modelado.v001.jpg "UML Diagram")
 
 # DEVELOPMENT ESTIMATES
 
