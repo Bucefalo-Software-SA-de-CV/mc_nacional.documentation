@@ -7,10 +7,10 @@ En este apartado se describe cada una de las fases del proceso de promoción, lo
 
 ## Leyenda de flechas (flujos del proceso)
 
-🟢 **Flechas verdes** indican el **flujo correcto (happy path)** del proceso.  
-🔴 **Flechas rojas** indican el **flujo de eliminación** dentro del proceso.  
-🟡 **Flechas amarillas** indican el **flujo de procesos secundarios**.  
-🔵 **Flechas azules** indican el **flujo de subprocesos** dentro de los procesos secundarios (amarillos).  
+ **Flechas verdes** indican el **flujo correcto (happy path)** del proceso.  
+ **Flechas rojas** indican el **flujo de eliminación** dentro del proceso.  
+ **Flechas amarillas** indican el **flujo de procesos secundarios**.  
+ **Flechas azules** indican el **flujo de subprocesos** dentro de los procesos secundarios (amarillos).  
 
 ---
 
@@ -18,12 +18,12 @@ En este apartado se describe cada una de las fases del proceso de promoción, lo
 
 | Elemento | Significado |
 |---------|-------------|
-| 🟦 Cuadros y rombos azules | Representan operaciones realizadas en la plataforma (móvil o web). |
-| 🟩 Cuadros verdes | Representan los **estatus** o **etapas** de la gestión. |
-| 🟥 Cuadros rojos | Representan operaciones de **eliminación**, ejecutadas por usuarios con permisos (`PROMOTION_ADMIN`, `COORDINATOR_MUNICIPALITY`). Estas pueden ocurrir en cualquier etapa. |
-| ⚪ Cuadros y rombos grises | Representan pasos que se realizan de manera **presencial**, fuera del sistema (ej. entrega física a la dependencia). |
-| 🟫 Cuadros amarillos | Operaciones que **permiten modificar** la gestión, como editar o reasignar dependencia. |
-| 🟨 Cuadro amarillo claro | Operación de **visualización**, como vista previa del documento. |
+| Cuadros y rombos azules | Representan operaciones realizadas en la plataforma (móvil o web). |
+| Cuadros verdes | Representan los **estatus** o **etapas** de la gestión. |
+| Cuadros rojos | Representan operaciones de **eliminación**, ejecutadas por usuarios con permisos (`PROMOTION_ADMIN`, `COORDINATOR_MUNICIPALITY`). Estas pueden ocurrir en cualquier etapa. |
+| Cuadros y rombos grises | Representan pasos que se realizan de manera **presencial**, fuera del sistema (ej. entrega física a la dependencia). |
+| Cuadros amarillos | Operaciones que **permiten modificar** la gestión, como editar o reasignar dependencia. |
+| Cuadro amarillo claro | Operación de **visualización**, como vista previa del documento. |
 
 
 ## Descripción  
@@ -61,14 +61,9 @@ En este apartado se describe cada una de las fases del proceso de promoción, lo
 ---   
 
 # Entregable: Módulo de Gestión  
-## Tiempos estimados
-
-- **Backend:** 4 días
-- **Frontend:** 5 días
-
 ---
 
-## Backend (4 días)
+## Backend
 
 ### Endpoints requeridos:
 - `CREATE` – Crear nueva gestión
@@ -79,9 +74,7 @@ En este apartado se describe cada una de las fases del proceso de promoción, lo
 - `MAKE PDF` – Generación de PDF
 - `MAKE PREVIEW PDF` – Vista previa del documento en PDF
 
----
-
-## Frontend (5 días)
+## Frontend
 
 ### Desarrollo del componente del módulo de gestión:
 - Estructura de la **interfaz**
@@ -93,9 +86,73 @@ En este apartado se describe cada una de las fases del proceso de promoción, lo
 ---
 
 ## Precondiciones
-
 - Catálogo de **dependencias**
 - Catálogo de **funcionarios**
 - Catálogo de **tipos de trámites**
+- Catálogo de **plantillas**
+
 
 ---
+# Estructura de Solicitud (App Avanza)
+
+```json
+{
+  "address": {
+    "federalDistrict": number,
+    "localDistrict": number,
+    "section": number,
+    "block": number,
+    "promotionBlock": number,
+    "street": string,
+    "extNumber": string,
+    "intNumber": string,
+    "suburb": string,
+    "municipality": string,
+    "locality": string,
+    "zipCode": string
+  },
+  "voteAddress": {
+    "federalDistrict": number,
+    "localDistrict": number,
+    "section": number,
+    "block": number,
+    "promotionBlock": number,
+    "street": string,
+    "extNumber": string,
+    "intNumber": string,
+    "suburb": string,
+    "municipality": string,
+    "locality": string,
+    "zipCode": string
+  },
+  "attachments": array, //[string]
+  "description": string,
+  "idStatus": number,   //Siempre 1
+  "phase": number,      //Siempre 1
+  "ref": string,
+  "sector": string,
+  "status": string,     //Siempre "register"
+  "typeRequest": string,
+  "username": string,
+  "resideInAddress": number,
+  "latitude": number,
+  "longitude": number,
+  "block": number,
+  "formality": string,
+  "municipality": string,
+  "districtFederal": number,
+  "districtLocal": number,
+  "section": number,
+  "citizenId": string,
+  "names": string,
+  "secondSurname": string,
+  "firstSurname": string,
+  "whatsapp": string,
+  "phone": string,
+  "whatsappStatus": number,
+  "birthday": string,
+  "genre": string,
+  "zRequestedAt": Date   // Ejemplo: 2025-08-11T11:35:34.000+00:00
+}
+---
+
