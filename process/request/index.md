@@ -1,4 +1,6 @@
 # Proceso de gestión
+Endpoint: `api/requests`
+
 En este apartado se describe cada una de las fases del proceso de promoción, los estatus que puede tomar y las acciones que se pueden realizar dependiendo de cada estatus.
 ## Diagrama de proceso
 <img src="proceso.png" alt="Proceso de Gestión" width="400">  
@@ -154,5 +156,4 @@ En este apartado se describe cada una de las fases del proceso de promoción, lo
   "genre": string,
   "zRequestedAt": Date   // Ejemplo: 2025-08-11T11:35:34.000+00:00
 }
----
-
+```
